@@ -1,24 +1,24 @@
 {
-  "name": "nodemongousers",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SamiNami/nodeMongoUsers.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SamiNami/nodeMongoUsers/issues"
-  },
-  "homepage": "https://github.com/SamiNami/nodeMongoUsers#readme",
-  "dependencies": {
-    "mocha": "^5.2.0",
-    "mongoose": "^5.2.7",
-    "nodemon": "^1.18.3"
-  }
+    "name": "nodemongousers",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SamiNami/nodeMongoUsers.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SamiNami/nodeMongoUsers/issues"
+    },
+    "homepage": "https://github.com/SamiNami/nodeMongoUsers#readme",
+    "dependencies": {
+        "mocha": "^5.2.0",
+        "mongoose": "^5.2.7",
+        "nodemon": "^1.18.3"
+    }
 }
