@@ -11,16 +11,12 @@ describe('Updating records', () => {
         });
     });
 
-    function assertName(operation, done) {
-        operation
-            .then(() => {
-                return User.find({});
-            })
-            .then(users => {
-                assert(users.length === 1);
-                assert(users[0].name === 'Kappa');
-                done();
-            });
+    async function assertName(operation, done) {
+        await operation;
+        const users = await User.find({});
+        assert(users.length === 1);
+        assert(users[0].name === 'Kappa');
+        done();
     }
 
     it('instance type using set and save', done => {
