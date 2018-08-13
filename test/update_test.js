@@ -44,7 +44,7 @@ describe('Updating records', () => {
     });
 
     // increment many instances in the model class
-    it('A user can have their postcount incremented by 1', done => {
+    xit('A user can have their postcount incremented by 1', done => {
         User.update({ name: 'Joe' }, { $inc: { postCount: 1 } })
             .then(() => {
                 return User.findOne({ name: 'Joe' });
