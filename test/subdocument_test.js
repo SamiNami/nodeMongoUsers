@@ -16,4 +16,8 @@ describe('Subdocuments', () => {
                 done();
             });
     });
+
+    it('can add subdocuments to and existing record', done => {
+        // ka
+    });
 });
