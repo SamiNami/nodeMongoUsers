@@ -13,7 +13,7 @@ describe('Assosiations', () => {
             content: 'Yep it really is'
         });
         comment = new Comment({ content: 'Congratz on great post' });
-
+        // references / assosiations 
         joe.blogPosts.push(blogPost);
         blogPost.comments.push(comment);
         // set a reference in the comment to joe;
