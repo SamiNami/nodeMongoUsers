@@ -26,8 +26,7 @@ describe('Middleware', () => {
                 return BlogPost.countDocuments();
             })
             .then(count => {
-                console.log(count);
-                // assert(count === 0);
+                assert(count === 0);
                 done();
             });
     });
