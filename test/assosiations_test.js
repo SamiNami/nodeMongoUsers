@@ -52,6 +52,10 @@ describe('Assosiations', () => {
                     user.blogPosts[0].comments[0].content ===
                         'Congratz on great post'
                 );
+                assert(
+                    user.blogPosts[0].comments[0].content ===
+                        'Congratz on great post'
+                );
                 done();
             });
     });

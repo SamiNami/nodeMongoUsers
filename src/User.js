@@ -19,6 +19,13 @@ const UserSchema = new Schema({
 UserSchema.virtual('postCount').get(function() {
     return this.posts.length;
 });
+// middleware
+UserSchema.pre('remove', function(next) {
+    const BlogPost = mongoose.model('blogposts');
+    // this === joe
+    // go throuh all BlogPosts, look at the id, if the iD is in IN the list, remove it
+    BlogPost.remove({ _id: { $in: this.blogPosts } }).then(() => next());
+});
 
 const User = mongoose.model('users', UserSchema);
 
